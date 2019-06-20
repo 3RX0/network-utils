@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: network-util
+  namespace: network-util
+spec:
+  containers:
+    - name: network-util
+      image: aob-sygnum-int-docker.bin.swisscom.com/network-util:latest
+      command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 5 ; done"]
+  restartPolicy: Never
