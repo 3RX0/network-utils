@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - name: network-util
-      image: aob-sygnum-int-docker.bin.swisscom.com/network-util:latest
+      image: <imagerepository>/network-util:latest
       command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 5 ; done"]
   restartPolicy: Never
